@@ -3,93 +3,112 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ganesh Kumar — I build tiny web apps, games, and experiments</title>
-<meta name="description" content="Ganesh Kumar builds tiny web apps, games, and experiments. Home of Jot, the AI writing companion, and codevu — a project built and maintained by AI.">
-<meta name="theme-color" content="#8b5cf6">
+<title>Ganesh Kumar — comics, essays, and weekend experiments</title>
+<meta name="description" content="Ganesh Kumar builds weekend-sized ideas: small games, tiny tools, and experiments. Home of Jot, codevu, and a build log in comics.">
+<meta name="theme-color" content="#faf5ec">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f6c90e'/%3E%3Ctext x='32' y='45' font-family='sans-serif' font-size='36' font-weight='900' text-anchor='middle' fill='%2326221c'%3EG%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="#">ganeshks<span class="brand-dot">.</span></a>
+  <div class="header-inner">
+    <a class="brand" href="index.html">ganeshks<span class="brand-dot">.</span></a>
     <nav class="nav">
-      <a href="#jot">Jot</a>
       <a href="#projects">Projects</a>
+      <a href="comics.html">Comics</a>
       <a href="#about">About</a>
     </nav>
-    <a class="btn btn-primary btn-small" href="https://chromewebstore.google.com/detail/jot/ocbfgpiibmgkkjbpbpnhejalpakdonjh">Get Jot</a>
+    <a class="btn btn-small btn-accent" href="https://chromewebstore.google.com/detail/jot/ocbfgpiibmgkkjbpbpnhejalpakdonjh">Get Jot</a>
   </div>
 </header>
 
 <main>
   <section class="hero wrap">
-    <p class="pill">Tiny web apps &middot; Games &middot; Experiments</p>
-    <h1>I&rsquo;m Ganesh.</h1>
-    <p class="lede">I build weekend-sized ideas — small apps, games, and experiments — and ship them fast. Most of them are built in the open, with Pip, my AI collaborator, doing the heavy lifting.</p>
-    <p class="stats"><span>🔥 9 weekend experiments</span> &middot; <span>⭐ 1 flagship app</span> &middot; <span>🚀 shipped in public</span></p>
+    <p class="pill">Comedy with a resume</p>
+    <h1>I&rsquo;m <span class="hl">Ganesh.</span></h1>
+    <p class="lede">I build weekend-sized ideas: small games, tiny tools, and experiments that mostly work. Everything ships in public, usually with an AI pair programmer doing the typing while I supervise from the couch.</p>
+    <p class="stats"><b>10</b> daily games &middot; <b>1</b> Chrome extension &middot; a truly unreasonable number of <b>2am commits</b></p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#projects">See the projects</a>
-      <a class="btn btn-outline" href="#jot">Meet Jot</a>
+      <a class="btn btn-primary" href="comics.html">Read the comics</a>
+      <a class="btn" href="#projects">See the projects</a>
     </div>
   </section>
 
-  <section class="wrap" id="jot">
-    <div class="card flagship">
-      <p class="badge badge-yellow">⭐ Flagship</p>
-      <h2>Jot — the AI writing companion that keeps your data yours</h2>
-      <p>Jot redacts names, emails, and other sensitive info <strong>on your device</strong> before anything touches the cloud. You get AI-powered writing help; your private details never leave your machine.</p>
+  <section class="wrap block" id="jot">
+    <div class="card sketch shadow">
+      <p class="badge badge-green">Shipped</p>
+      <h2>Jot: the AI writing companion that minds its own business</h2>
+      <p>Jot gives you AI writing help, and it redacts names, emails, and secrets <strong>on your device</strong> before anything touches the cloud. Your private details never leave your machine. It is the most responsible assistant I have ever worked with, and I built it, which tells you something about my other assistants.</p>
       <div class="row">
-        <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/jot/ocbfgpiibmgkkjbpbpnhejalpakdonjh">Get Jot for Chrome — Free</a>
-        <a class="btn btn-outline" href="https://jot.ganeshks.com">jot.ganeshks.com</a>
+        <a class="btn btn-accent" href="https://chromewebstore.google.com/detail/jot/ocbfgpiibmgkkjbpbpnhejalpakdonjh">Get Jot for Chrome: free</a>
+        <a class="btn" href="https://jot.ganeshks.com">jot.ganeshks.com</a>
       </div>
-      <p class="fine">Free &middot; No sign-in &middot; No account</p>
+      <p class="fine">Free &middot; No sign-in &middot; No account &middot; Your secrets stay yours</p>
     </div>
   </section>
 
-  <section class="wrap" id="projects">
+  <section class="wrap block" id="projects">
     <h2 class="section-title">Projects</h2>
-    <div class="cards">
-      <div class="card project">
-        <p class="badge badge-purple">🔁 Built on the loop</p>
-        <h3>codevu</h3>
-        <p>codevu.com is my playground of tiny web apps, games, and experiments — a project that&rsquo;s built on the loop: designed, coded, and shipped by Pip, my AI collaborator, in a continuous build loop.</p>
-        <a class="link-more" href="https://codevu--codevu-app.us-central1.hosted.app/">Visit codevu →</a>
-      </div>
-      <div class="card project">
-        <p class="badge badge-blue">🧪 Weekends</p>
-        <h3>Weekend experiments</h3>
-        <p>KidStar, Tic-Tac-Toe: Neon Shift, Making Human, Guess the Flag, Crowd Says, WordWise, Kiddo Quiz, Recipe Extractor, Jam — small games and tools, built for fun and learning.</p>
-        <a class="link-more" href="https://codevu--codevu-app.us-central1.hosted.app/#experiments">Play them on codevu →</a>
-      </div>
+    <p class="section-sub">Small ideas, shipped fast. Clicking is encouraged.</p>
+
+    <div class="card sketch">
+      <p class="badge badge-purple">Built on the loop</p>
+      <h3>codevu.com</h3>
+      <p>My playground of tiny web apps: <strong>ten daily games</strong> with fresh puzzles every morning, plus experiments like Jam, a YouTube jukebox. It is designed, coded, and shipped by Pip, my AI collaborator, in a continuous build loop. I review the pull requests and take the credit.</p>
+      <a class="link-more" href="https://codevu.com/">Play the games &rarr;</a>
+    </div>
+
+    <div class="card sketch">
+      <p class="badge">New</p>
+      <h3>Wall of Builders</h3>
+      <p>A wall of a million pixels where builders claim blocks for their projects. Claim yours with a pull request and a backlink, and your little square lives forever. Or until the internet ends, whichever comes first.</p>
+      <a class="link-more" href="https://github.com/ganeshks1011/wall-of-builders">See the wall &rarr;</a>
+    </div>
+
+    <div class="card sketch">
+      <p class="badge badge-blue">Weekends</p>
+      <h3>Weekend experiments</h3>
+      <p>Built for fun, learning, and the occasional 2am revelation:</p>
+      <ul class="experiment-list">
+        <li>WORDUP</li><li>SORTED</li><li>FLAG REVEAL</li><li>HOT AND COLD</li><li>DAILY 5</li>
+        <li>WORD LADDER</li><li>MINI CROSSWORD</li><li>LETTER HIVE</li><li>CROWN LOGIC</li><li>MATH SPRINT</li>
+        <li>Jam</li><li>Price watcher (in progress)</li>
+      </ul>
+      <a class="link-more" href="https://codevu.com/#experiments">Browse them all &rarr;</a>
     </div>
   </section>
 
-  <section class="wrap" id="about">
+  <section class="wrap block" id="about">
     <h2 class="section-title">About</h2>
-    <div class="cards">
-      <div class="card">
-        <p>I&rsquo;m Ganesh Kumar. I like turning small ideas into working things you can click on. By day I ship software; on weekends I ship experiments — usually with an AI pair-programmer and usually in public.</p>
-        <p class="fine">Follow the builds: <a href="https://x.com/codevuhq">@codevuhq on X</a></p>
+    <p class="section-sub">The resume part, briefly.</p>
+    <div class="cards-2">
+      <div class="card sketch">
+        <p>I&rsquo;m Ganesh Kumar. By day I ship software. On weekends I ship experiments. I like small ideas that turn into things you can click.</p>
+        <p>Most of my building happens in public these days, and my pair programmer is an AI named Pip, which means I produce an unreasonable amount of code and an unreasonable number of comics about it.</p>
+        <p class="fine">Follow the builds: <a class="link-more" href="https://x.com/codevuhq">@codevuhq on X</a></p>
       </div>
-      <div class="card">
+      <div class="card sketch">
         <h3>Say hi</h3>
-        <p>Found a bug, have an idea, or just want to talk shop? I&rsquo;m around.</p>
-        <a class="btn btn-blue btn-small" href="https://www.linkedin.com/in/ganeshks1011/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+        <p>Found a bug, have an idea, or want to talk shop? I am around.</p>
+        <div class="row">
+          <a class="btn btn-blue btn-small" href="https://www.linkedin.com/in/ganeshks1011/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn btn-small" href="https://x.com/codevuhq" target="_blank" rel="noreferrer">X</a>
+        </div>
       </div>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
-  <div class="wrap footer-inner">
+  <div class="footer-inner">
     <span>&copy; 2026 Ganesh Kumar</span>
     <span class="footer-links">
-      <a href="#jot">Jot</a>
-      <a href="#projects">Projects</a>
+      <a href="comics.html">Comics</a>
+      <a href="https://codevu.com/">codevu</a>
       <a href="https://www.linkedin.com/in/ganeshks1011/" target="_blank" rel="noreferrer">LinkedIn</a>
       <a href="https://x.com/codevuhq" target="_blank" rel="noreferrer">X</a>
     </span>
