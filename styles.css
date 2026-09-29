@@ -149,6 +149,18 @@ section.block{padding:36px 0}
   .hero{padding:48px 22px 32px}
 }
 
+/* bio + games extras */
+.steps{margin:12px 0 18px;padding-left:22px}
+.steps li{margin:8px 0}
+.tally{margin:12px 0;padding:0;list-style:none}
+.tally li{margin:8px 0;font-weight:700}
+.tally li b{color:var(--accent)}
+.game-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-bottom:26px}
+@media(max-width:640px){.game-grid{grid-template-columns:1fr}}
+.game-card{margin:0;padding:22px}
+.game-card h3{margin:0 0 6px;font-size:1.15rem;letter-spacing:.02em}
+.game-card p{margin:0;color:var(--muted)}
+
 /* footer */
 .site-footer{border-top:3px solid var(--ink);margin-top:40px}
 .footer-inner{
