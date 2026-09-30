@@ -191,9 +191,12 @@ section.block{padding:36px 0}
 .comic-tile{display:block;text-decoration:none;color:var(--ink);position:relative}
 .tile-art{
   background:#fff;border:3px solid var(--ink);padding:12px;
+  border-radius:26px 14px 30px 16px/16px 30px 14px 26px;
   box-shadow:6px 6px 0 rgba(38,34,28,.16);
   transition:transform .12s ease, box-shadow .12s ease;
 }
+.comic-grid .comic-tile:nth-child(3n+2) .tile-art{border-radius:16px 30px 14px 28px/28px 14px 30px 16px}
+.comic-grid .comic-tile:nth-child(3n) .tile-art{border-radius:30px 18px 24px 30px/24px 28px 30px 18px}
 .comic-tile:hover .tile-art{transform:translate(-2px,-2px) rotate(-.7deg);box-shadow:10px 10px 0 rgba(38,34,28,.2)}
 .tile-art svg{display:block;width:100%;height:auto}
 .tile-meta{padding:14px 4px 0}
@@ -236,6 +239,8 @@ section.block{padding:36px 0}
 
 /* home: simple + hand-drawn */
 .home .hero h1{font-family:'Caveat',cursive;font-weight:700;font-size:clamp(4.2rem,11vw,7rem);line-height:1;margin-bottom:10px}
-.home .section-title{font-family:'Caveat',cursive;font-weight:700;font-size:2.9rem}
+.home .section-title{font-family:'Caveat',cursive;font-weight:700;font-size:2.9rem;display:inline-block;position:relative;transform:rotate(-1deg)}
+.home .section-title::after{content:"";position:absolute;left:-8px;right:-8px;bottom:.06em;height:.44em;background:rgba(246,201,14,.55);z-index:-1;transform:rotate(-.7deg);border-radius:8px 16px 10px 18px}
 .home .tile-meta h3{font-family:'Caveat',cursive;font-weight:700;font-size:1.75rem}
 .comic-grid.single{grid-template-columns:minmax(0,340px);justify-content:center}
+.doodle-arrow{display:block;margin:4px 0 0 12px;transform:rotate(4deg)}
