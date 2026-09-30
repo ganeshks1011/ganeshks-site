@@ -233,3 +233,7 @@ section.block{padding:36px 0}
   margin:34px 0 10px;
 }
 .comic-nav .btn{font-size:.95rem}
+
+/* homepage comics band — full-bleed free section */
+.comics-band{background:#f4e6c6;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);margin:36px 0}
+.comics-band .block{padding:36px 0}
