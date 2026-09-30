@@ -74,7 +74,7 @@ body{
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
 
 /* sections */
-section.block{padding:36px 0}
+section.block{padding-top:36px;padding-bottom:36px}
 .section-title{font-size:2rem;font-weight:900;margin:0 0 6px}
 .section-sub{color:var(--muted);margin:0 0 24px;max-width:640px}
 .card{
@@ -176,7 +176,7 @@ section.block{padding:36px 0}
   .header-inner .btn-small{margin-left:auto}
   .nav{order:2;flex-basis:100%;margin-left:0;gap:6px 20px;font-size:15px}
   .hero{padding:52px 22px 32px}
-  .block{padding:36px 0}
+  .block{padding-top:36px;padding-bottom:36px}
   .strip{grid-template-columns:1fr;max-width:440px}
   .speech{font-size:15px}
   .jot-band-inner{flex-direction:column;align-items:flex-start}
