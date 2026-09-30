@@ -234,6 +234,8 @@ section.block{padding:36px 0}
 }
 .comic-nav .btn{font-size:.95rem}
 
-/* homepage comics band — full-bleed free section */
-.comics-band{background:#f4e6c6;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);margin:36px 0}
-.comics-band .block{padding:36px 0}
+/* home: simple + hand-drawn */
+.home .hero h1{font-family:'Caveat',cursive;font-weight:700;font-size:clamp(4.2rem,11vw,7rem);line-height:1;margin-bottom:10px}
+.home .section-title{font-family:'Caveat',cursive;font-weight:700;font-size:2.9rem}
+.home .tile-meta h3{font-family:'Caveat',cursive;font-weight:700;font-size:1.75rem}
+.comic-grid.single{grid-template-columns:minmax(0,340px);justify-content:center}
