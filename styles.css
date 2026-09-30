@@ -172,9 +172,10 @@ section.block{padding:36px 0}
 .footer-links a:hover{color:var(--accent);text-decoration:underline wavy}
 
 @media (max-width: 640px){
-  .header-inner{flex-wrap:wrap;row-gap:10px}
-  .nav{gap:4px 14px;font-size:15px}
-  .hero{padding:52px 0 6px}
+  .header-inner{flex-wrap:wrap;row-gap:8px;padding:12px 18px}
+  .header-inner .btn-small{margin-left:auto}
+  .nav{order:2;flex-basis:100%;margin-left:0;gap:6px 20px;font-size:15px}
+  .hero{padding:52px 22px 32px}
   .block{padding:36px 0}
   .strip{grid-template-columns:1fr;max-width:440px}
   .speech{font-size:15px}
