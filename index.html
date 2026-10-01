@@ -134,38 +134,95 @@
 
       <a class="comic-tile" href="https://codevu.com/">
         <span class="tile-art">
-          <svg viewBox="0 0 400 400" role="img" aria-label="codevu tile: inked game tiles and a swooping bat">
+          <svg viewBox="0 0 400 400" role="img" aria-label="codevu tile: four little purple Pip bats playing on the game tiles">
             <rect width="400" height="400" fill="#8b5cf6"/>
             <ellipse cx="200" cy="220" rx="170" ry="150" fill="#a37ff7" opacity=".5"/>
-            <g font-family="'Patrick Hand', cursive" fill="#faf5ec" text-anchor="middle" transform="rotate(-2 200 68)">
-              <text x="200" y="72" font-size="70">CODEVU</text>
+            <defs>
+              <g id="pip-wings-side">
+                <path d="M-30 -8 C-56 -26 -74 -12 -80 10 C-70 4 -62 8 -60 20 C-50 14 -40 16 -34 26 C-30 16 -28 4 -30 -8 Z" fill="#5b21b6" stroke="#26221c" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M30 -8 C56 -26 74 -12 80 10 C70 4 62 8 60 20 C50 14 40 16 34 26 C30 16 28 4 30 -8 Z" fill="#5b21b6" stroke="#26221c" stroke-width="4" stroke-linejoin="round"/>
+              </g>
+              <g id="pip-wings-up">
+                <path d="M-30 -10 C-52 -28 -58 -52 -50 -74 C-44 -60 -36 -54 -30 -42 Z" fill="#5b21b6" stroke="#26221c" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M30 -10 C52 -28 58 -52 50 -74 C44 -60 36 -54 30 -42 Z" fill="#5b21b6" stroke="#26221c" stroke-width="4" stroke-linejoin="round"/>
+              </g>
+              <g id="pip-core">
+                <ellipse cx="-25" cy="-48" rx="13" ry="19" fill="#6d28d9" stroke="#26221c" stroke-width="4" transform="rotate(-16 -25 -48)"/>
+                <ellipse cx="25" cy="-48" rx="13" ry="19" fill="#6d28d9" stroke="#26221c" stroke-width="4" transform="rotate(16 25 -48)"/>
+                <ellipse cx="-25" cy="-46" rx="6.5" ry="10.5" fill="#f6c90e" transform="rotate(-16 -25 -46)"/>
+                <ellipse cx="25" cy="-46" rx="6.5" ry="10.5" fill="#f6c90e" transform="rotate(16 25 -46)"/>
+                <ellipse cx="-14" cy="42" rx="10" ry="6.5" fill="#5b21b6" stroke="#26221c" stroke-width="3.5"/>
+                <ellipse cx="14" cy="42" rx="10" ry="6.5" fill="#5b21b6" stroke="#26221c" stroke-width="3.5"/>
+                <ellipse cx="0" cy="0" rx="36" ry="42" fill="#6d28d9" stroke="#26221c" stroke-width="4"/>
+                <ellipse cx="0" cy="14" rx="21" ry="23" fill="#8b5cf6" opacity=".55"/>
+              </g>
+              <g id="pip-side"><use href="#pip-wings-side"/><use href="#pip-core"/></g>
+              <g id="pip-up"><use href="#pip-wings-up"/><use href="#pip-core"/></g>
+              <g id="face-happy">
+                <circle cx="-13" cy="-10" r="8" fill="#faf5ec"/><circle cx="13" cy="-10" r="8" fill="#faf5ec"/>
+                <circle cx="-13" cy="-10" r="3.6" fill="#26221c"/><circle cx="13" cy="-10" r="3.6" fill="#26221c"/>
+                <path d="M-11 5 Q0 16 11 5" stroke="#26221c" stroke-width="5" fill="none" stroke-linecap="round"/>
+              </g>
+              <g id="face-wow">
+                <circle cx="-13" cy="-12" r="9" fill="#faf5ec"/><circle cx="13" cy="-12" r="9" fill="#faf5ec"/>
+                <circle cx="-13" cy="-12" r="3" fill="#26221c"/><circle cx="13" cy="-12" r="3" fill="#26221c"/>
+                <circle cx="0" cy="10" r="5.5" fill="#26221c"/>
+              </g>
+              <g id="face-peek">
+                <circle cx="-6" cy="-10" r="11" fill="#faf5ec"/>
+                <circle cx="-2" cy="-10" r="4.5" fill="#26221c"/>
+                <path d="M4 6 q8 6 14 2" stroke="#26221c" stroke-width="4" fill="none" stroke-linecap="round"/>
+              </g>
+              <g id="face-fly">
+                <circle cx="-13" cy="-10" r="7.5" fill="#faf5ec"/><circle cx="13" cy="-10" r="7.5" fill="#faf5ec"/>
+                <circle cx="-13" cy="-10" r="3.4" fill="#26221c"/><circle cx="13" cy="-10" r="3.4" fill="#26221c"/>
+                <path d="M-8 6 Q0 12 8 6" stroke="#26221c" stroke-width="4" fill="none" stroke-linecap="round"/>
+              </g>
+            </defs>
+            <g font-family="'Patrick Hand', cursive" fill="#faf5ec" text-anchor="middle" transform="rotate(-2 200 64)">
+              <text x="200" y="68" font-size="62">CODEVU</text>
             </g>
+            <!-- peeking Pip, tucked behind the 5 tile -->
+            <g transform="translate(118,298) scale(0.66)">
+              <use href="#pip-side"/><use href="#face-peek"/>
+            </g>
+            <!-- game tiles -->
             <g stroke="#26221c" stroke-width="5">
-              <rect x="84" y="140" width="100" height="100" rx="18" fill="#f6c90e" transform="rotate(-3 134 190)"/>
-              <rect x="206" y="140" width="100" height="100" rx="18" fill="#e4572e" transform="rotate(2 256 190)"/>
-              <rect x="145" y="256" width="100" height="100" rx="18" fill="#7bc96f" transform="rotate(-2 195 306)"/>
-            </g>
-            <g stroke="#4c2e9e" stroke-width="4" stroke-linecap="round" opacity=".8">
-              <path d="M96 252 l22 10 M126 256 l22 10 M218 252 l22 10 M248 256 l22 10 M157 366 l22 8 M187 368 l22 8"/>
+              <rect x="58" y="152" width="96" height="96" rx="18" fill="#f6c90e" transform="rotate(-4 106 200)"/>
+              <rect x="246" y="152" width="96" height="96" rx="18" fill="#e4572e" transform="rotate(3 294 200)"/>
+              <rect x="152" y="252" width="96" height="96" rx="18" fill="#7bc96f" transform="rotate(-2 200 300)"/>
             </g>
             <g font-family="'Patrick Hand', cursive" fill="#26221c" text-anchor="middle">
-              <text x="134" y="208" font-size="54">W</text>
-              <text x="256" y="208" font-size="54">?!</text>
-              <text x="195" y="324" font-size="54">5</text>
+              <text x="106" y="218" font-size="50" transform="rotate(-4 106 200)">W</text>
+              <text x="294" y="218" font-size="50" transform="rotate(3 294 200)">?!</text>
+              <text x="200" y="318" font-size="50" transform="rotate(-2 200 300)">5</text>
             </g>
-            <g transform="translate(324,106)">
-              <path d="M-4 2 L-38 -16 L-30 2 L-38 10 L-6 8 Z" fill="#26221c"/>
-              <path d="M4 2 L38 -16 L30 2 L38 10 L6 8 Z" fill="#26221c"/>
-              <ellipse cx="0" cy="4" rx="9" ry="12" fill="#26221c"/>
-              <circle cx="-3.5" cy="2" r="2.6" fill="#faf5ec"/><circle cx="3.5" cy="2" r="2.6" fill="#faf5ec"/>
-              <circle cx="-3.5" cy="2" r="1.2" fill="#26221c"/><circle cx="3.5" cy="2" r="1.2" fill="#26221c"/>
+            <!-- peeking Pip's wing gripping the 5 tile edge -->
+            <path d="M154 288 q-18 4 -20 20 q10 -2 14 4 q4 -12 6 -24 Z" fill="#5b21b6" stroke="#26221c" stroke-width="3.5" stroke-linejoin="round"/>
+            <!-- Pip cheering on the W tile -->
+            <g transform="translate(106,112) scale(0.8)">
+              <use href="#pip-up"/><use href="#face-happy"/>
             </g>
-            <g stroke="#faf5ec" stroke-width="4" stroke-linecap="round" opacity=".85" fill="none">
-              <path d="M266 88 q22 -12 46 -14 M264 110 q24 -8 50 -8"/>
+            <g stroke="#faf5ec" stroke-width="4" stroke-linecap="round" opacity=".9">
+              <path d="M72 44 L64 30 M106 40 L106 24 M140 44 L148 30"/>
+            </g>
+            <!-- Pip hanging upside down from the title, reaching for the ?! tile -->
+            <path d="M292 86 L291 72 M312 86 L313 72" stroke="#26221c" stroke-width="3" stroke-linecap="round"/>
+            <g transform="translate(302,116) rotate(180) scale(0.72)">
+              <use href="#pip-side"/><use href="#face-wow"/>
+              <path d="M28 8 C38 -6 42 -22 44 -38" stroke="#26221c" stroke-width="8" fill="none" stroke-linecap="round"/>
+            </g>
+            <!-- Pip flying after a star -->
+            <g stroke="#faf5ec" stroke-width="4" stroke-linecap="round" opacity=".8">
+              <path d="M272 332 h-26 M276 350 h-28 M272 368 h-26"/>
+            </g>
+            <path d="M368 296 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 Z" fill="#f6c90e" stroke="#26221c" stroke-width="3" stroke-linejoin="round"/>
+            <g transform="translate(322,344) rotate(-16) scale(0.55)">
+              <use href="#pip-up"/><use href="#face-fly"/>
             </g>
             <g fill="#faf5ec" opacity=".9">
-              <path d="M60 300 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 Z"/>
-              <path d="M340 300 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3 Z"/>
+              <path d="M40 108 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3 Z"/>
+              <path d="M366 244 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5 Z"/>
             </g>
           </svg>
         </span>
