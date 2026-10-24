@@ -205,6 +205,7 @@ section.block{padding-top:32px;padding-bottom:32px}
 }
 .comic-tile:hover .tile-art{transform:translate(-2px,-2px) rotate(-.7deg);box-shadow:var(--shadow-comic-lg)}
 .tile-art svg{display:block;width:100%;height:auto}
+.tile-art img{display:block;width:100%;height:auto;border-radius:6px}
 .tile-meta{padding:12px 4px 0}
 .tile-meta h3{margin:0 0 6px;font-size:1.2rem;font-weight:900}
 .tile-tag{
